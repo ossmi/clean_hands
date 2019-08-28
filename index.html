@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="sass/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <script src="js/script.js"></script>
   <title>Город чистых рук</title>
@@ -40,27 +40,30 @@
   </header>
 
   <div class="offer">
-    <div class="container">
+    <div class="conteiner">
 
       <div class="offer__titele">
         ОПТИМИЗАЦИЯ  ГИГИЕНЫ  РУК</div><!-- /.offer__titele -->
 
         <div class="offer__wrap_1">
           <div class="offer__news">
-            <p class="offer__news_text">Новости</p>
-            <img src="" alt="Пользовательское изображение" class="offer__news_img">
+            <div class="offer__news_wrap">
+                <p class="offer__news_text">Новости</p>
+                <img src="img/icon_news.png" alt="Иконка" class="offer__news_img">
+            </div>
+            <p class="offer__news_user"></p>
           </div><!-- /.offer__news -->
 
           <div class="offer__maintext">
-            <p class="offer__maintext_titele">Мы предлагаем</p>
+            <p class="offer__maintext_titele">Мы предлагаем:</p>
             <p class="offer__maintext_text">
-            универсальное и быстрое решение <br>
-            для оптимизации гигиены и максимальной защиты <br>
-            от инфекционных заболеваний, передающихся через «грязные» руки.
+            <span class="next bot">универсальное и быстрое решение</span>
+            <span class="next bot">для оптимизации гигиены и максимальной защиты</span>
+            <span class="next">от инфекционных заболеваний, передающихся через «грязные» руки.</span>
             </p>
           </div><!-- /.offer__maintext -->
 
-          <div class="offer__main_img">
+          <div class="offer__maintext_img">
             <img src="img/mashine.png" alt="Дезинфектор" class="main_img">
           </div><!-- /.offer__mainimg -->
         </div>
@@ -68,45 +71,60 @@
 
 
         <div class="offer__wrap_2">
-          <div class="offer__special">
-            <p class="offer__special_text">Спецпредложения</p>
-            <img src="" alt="Пользовательское изображение" class="offer__special_img">
-          </div><!-- /.offer__special -->
+          <div class="offer__news offer__news_special">
+            <div class="offer__news_wrap">
+                <p class="offer__news_text offer__news_text_special">Спецпредложения</p>
+                <img src="img/icon_news.png" alt="Иконка" class="offer__news_img offer__news_img_special">
+            </div>
+            <p class="offer__news_user"></p>
+          </div><!-- /.offer__news -->
 
           <div class="offer__item">
-            <div class="offer__item_element">Склад в <br>
-                Санкт-Петербурге</div>
+            <div class="offer__item_element">
+              <div class="offer__item_text">Склад в <br>
+              Санкт-Петербурге</div>
+              <img src="img/offer_icon1.png" alt="Иконка" class="offer__item_img">
+            </div>
             <!-- /.offer__item_element -->
-            <img src="img/offer_icon1.png" alt="Иконка" class="offer__item_img">
-            <div class="offer__item_element">Обширный парк <br>
-                приборов </div>
+
+            <div class="offer__item_element">
+              <div class="offer__item_text">Обширный парк <br>
+              приборов </div>
+              <img src="img/offer_icon2.png" alt="Иконка" class="offer__item_img">
+            </div>
             <!-- /.offer__item_element -->
-            <img src="img/offer_icon2.png" alt="Иконка" class="offer__item_img">
-            <div class="offer__item_element">Быстрая <br>
-                доставка</div>
+            <div class="offer__item_element offer__item_element-1">
+              <div class="offer__item_text">Быстрая <br>
+              доставка</div>
+              <img src="img/offer_icon3.png" alt="Иконка" class="offer__item_img">
+            </div>
             <!-- /.offer__item_element -->
-            <img src="img/offer_icon3.png" alt="Иконка" class="offer__item_img">
-            <div class="offer__item_element">Продленная <br>
-                гарантия</div>
+            <div class="offer__item_element offer__item_element-1">
+              <div class="offer__item_text ">Продленная <br>
+              гарантия</div>
+              <img src="img/offer_icon4.png" alt="Иконка" class="offer__item_img">
+            </div>
             <!-- /.offer__item_element -->
-            <img src="img/offer_icon4.png" alt="Иконка" class="offer__item_img">
-            <div class="offer__item_element">Профессинальный <br>
-                сервис</div>
+            <div class="offer__item_element offer__item_element-1">
+              <div class="offer__item_text">Профессинальный <br>
+              сервис</div>
+              <img src="img/offer_icon5.png" alt="Иконка" class="offer__item_img">
+            </div>
             <!-- /.offer__item_element -->
-            <img src="img/offer_icon5.png" alt="Иконка" class="offer__item_img">
+
           </div>
           <!-- /.offer__item -->
 
           <div class="offer__descr">
-            <h3 class="offer__descr_subtitle">
-                Автоматический прибор <br>
-                для дезинфекции рук</h3>
-            <div class="offer__descr_text">Это эффективная профилактическая мера, 
-                препятствующая заражению 
-                кишечными, воздушно-капельными,  
-                вирусными, грибковыми, 
-                контактными бактериальными,
-                инфекционными заболеваниями.</div>
+            <p class="offer__descr_titele">
+                <span class="next bot-1">Автоматический прибор </span> 
+                для дезинфекции рук</p>
+            <div class="offer__descr_text"><span class="next bot-2">Это эффективная профилактическая мера, </span> 
+              <span class="next bot-2">препятствующая заражению </span>
+              <span class="next bot-2">кишечными, воздушно-капельными, </span> 
+              <span class="next bot-2">вирусными, грибковыми, </span>
+              <span class="next bot-2">контактными бактериальными,</span>
+              <span class="next">инфекционными заболеваниями.</span></div>
           </div>
           <!-- /.offer__descr -->
           
