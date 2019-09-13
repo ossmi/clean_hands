@@ -213,17 +213,21 @@
 @media (max-width: 768px)
     .container
         width: 90%
+    .offer__back    
+        display: none
     .nav
         display: none
     .img_logo_mob
         width: 60%
     .biglogo
+        position: relative
         &__title
-            font-size: 21px
+            font-size: 22px
         &__contacts
+            position: absolute
             width: 97%
             margin-left: 10px
-            margin-top: 40vh
+            bottom: 10px
             &_town
                 display: none
             &_phone
@@ -255,9 +259,11 @@
             &-wrap
                 margin-left: 20px
         &__img
+            margin-top: -600px
+            height: 300px
             margin-right: 50px
         &__descr
-            
+            margin-top: 50px
             width: 330px
             margin-right: 5px
             &_title
@@ -333,6 +339,7 @@
         &__title
             font-size: 13px
         &__contacts
+            margin-top: 40vh
             &_phone
                 font-size: 10px
             &_mail
@@ -387,7 +394,7 @@
             width: 200px
             margin-left: auto
             margin-right: 2px
-            margin-top: -110px
+            margin-top: 150px
             &_title
                 font-size: 12px
                 margin-left: 15px
