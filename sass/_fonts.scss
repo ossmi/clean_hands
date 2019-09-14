@@ -1,13 +1,15 @@
 @font-face {
     font-family: 'Gulim';                                                                                   
-    src: url('../fonts/gulim.ttf') format('truetype');
+    src: url('../fonts/Gulim-01.woff') format('woff'),
+    url('../fonts/Gulim-01.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
 
 @font-face {
-    font-family: 'Gothic';                                                                                   
-    src: url('../fonts/GOTHIC.ttf') format('truetype');
+    font-family: 'Gothic';  
+    src: url('../fonts/GOTHIC.woff') format('woff'),
+    url('../fonts/GOTHIC.TTF') format('truetype');                                                                                 
     font-weight: normal;
     font-style: normal;
   }
