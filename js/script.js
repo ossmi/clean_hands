@@ -41,3 +41,5 @@ function hideContentOnClick (button, content) {
 
 hideContentOnClick(".features__item_i", ".features__item_hidden");
 hideContentOnClick(".i-2", ".hidden-1");
+
+

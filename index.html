@@ -66,6 +66,15 @@
                 <p class="offer__news_text">Новости</p>
                 <img src="img/icon_news.png" alt="Иконка" class="offer__news_img">
             </div>
+
+
+            <div class="news__item" id="news_modal">
+              <div class="news__item_data">01/01/2019</div>
+              <div class="news__item_text">Новость 1</div>
+
+            
+
+            </div>
             <p class="offer__news_user"></p>
           </div><!-- /.offer__news -->
 
@@ -481,6 +490,26 @@
 
 </div> <!-- /.form -->
 
+<div class="modal modal__hidden">
+  <div class="modal__dialog">
+      <h2 class="modal__title">Участие на фестивале «Большой Джем» 7.09 - 8.09  </h2>
+      <div class="modal__close">&#10006</div>
+      <div class="modal__text">Город Чистых Рук принял участие в пятом по счету джазовом фестивале.
+          Целью участие было продемонстрировать необходимость 
+         оснащения мероприятий средствами гигиены в зонах питания,
+         доступными для всех посетителей.
+          За два дня фестиваля фестиваль посетили 3000 человек. Из них услугой 
+         дезинфекции рук воспользовались более 2500 человек.  
+         </div> 
+         <!-- для того, чтобы сделать перенос строки необходимо поставить тэг <br> в конце строки -->
+      <div class="modal__wrap">
+        <div class="modal__photo"><img src="img/news/montreux-jazz-festival.jpg" alt="фото" class="modal__photo_img"></div>
+        <div class="modal__photo"><img src="img/news/montreux-jazz-festival.jpg" alt="фото" class="modal__photo_img"></div>
+        <div class="modal__photo"><img src="img/news/montreux-jazz-festival.jpg" alt="фото" class="modal__photo_img"></div>
+      </div>
+    </div>
+</div>
+
 </div>
 <!-- /.container -->
 
@@ -499,7 +528,17 @@
     });
     return false;
   });
+
+  $(document).ready( function () {
+    $('news_modal').on('click', function() {
+      console.log('Вы нажали кнопку');
+
+    }); 
+  });
+
 </script>
+
+
 
 <script src="js/script.js"></script>
 
