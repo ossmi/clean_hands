@@ -68,14 +68,18 @@
             </div>
 
 
-            <div class="news__item" id="news_modal">
-              <div class="news__item_data">01/01/2019</div>
-              <div class="news__item_text">Новость 1</div>
-
-            
-
+            <div class="news__item" id="news_modal-1">
+              <div class="news__item_text">7.09 - 8.09  Участие на фестивале 
+                  «Большой Джем» </div>
             </div>
-            <p class="offer__news_user"></p>
+            <div class="news__item" id="news_modal-2">
+              <div class="news__item_text">7.07 Участие на фестивале 
+                  «Ночь музыки в Гатчине»  </div>
+            </div>
+            <div class="news__item" id="news_modal-3">
+              <div class="news__item_text">5.05 Всемирный день гигиены рук</div>
+            </div>
+
           </div><!-- /.offer__news -->
 
           <div class="offer__maintext">
@@ -96,12 +100,20 @@
 
         <div class="offer__wrap_2">
           <div class="offer__news offer__news_special">
-            <div class="offer__news_wrap">
+            <a href="#form_special"><div class="offer__news_wrap">
                 <p class="offer__news_text offer__news_text_special">Спецпредложения</p>
                 <img src="img/icon_news.png" alt="Иконка" class="offer__news_img offer__news_img_special">
             </div>
-            <p class="offer__news_user"></p>
-          </div><!-- /.offer__news -->
+            <div class="news__item news__item_special" id="news_modal_special-1">
+              <div class="news__item_text">7.09 - 8.09  Скидка на оборудование 20% </div>
+            </div>
+            <div class="news__item news__item_special" id="news_modal_special-2">
+              <div class="news__item_text">7.07 Каждый третий заказ со скидкой 50%  </div>
+            </div>
+            <div class="news__item news__item_special" id="news_modal_special-3">
+              <div class="news__item_text">5.05 #город_чистых_рук выкладывайте фото и получите скидку</div>
+            </div>
+          </div></a><!-- /.offer__news -->
 
           <div class="offer__item">
             <div class="offer__item_element">
@@ -458,7 +470,7 @@
 </div>
 <!-- /.photo -->
 
-<div class="form">
+<div class="form" id="form_special">
   <form action="mailer/smart.php" method="POST" class="js-ajax" id="clean-form" autocomplete="on">
     <p class="form__descr" id="form_click">Имя</p>
     <input type="text" name="user_name" class="input input-name form__input" required>
@@ -490,7 +502,10 @@
 
 </div> <!-- /.form -->
 
-<div class="modal modal__hidden">
+
+<!-- Модальное окно - текст меняется в блоках modal__title и modal__text, фото вставляются сначала в папку img, затем прописывается путь к ним -->
+<!-- Новостной блок №1 -->
+<div class="modal modal__hidden" id="modal_news-1">
   <div class="modal__dialog">
       <h2 class="modal__title">Участие на фестивале «Большой Джем» 7.09 - 8.09  </h2>
       <div class="modal__close">&#10006</div>
@@ -508,6 +523,46 @@
         <div class="modal__photo"><img src="img/news/montreux-jazz-festival.jpg" alt="фото" class="modal__photo_img"></div>
       </div>
     </div>
+</div>
+<!-- Новостной блок №2 -->
+<div class="modal modal__hidden" id="modal_news-2">
+  <div class="modal__dialog">
+      <h2 class="modal__title">Новостной блок 2</h2>
+      <div class="modal__close">&#10006</div>
+      <div class="modal__text">Город Чистых Рук принял участие в пятом по счету джазовом фестивале.
+            Целью участие было продемонстрировать необходимость 
+           оснащения мероприятий средствами гигиены в зонах питания,
+           доступными для всех посетителей.
+            За два дня фестиваля фестиваль посетили 3000 человек. Из них услугой 
+           дезинфекции рук воспользовались более 2500 человек.  
+      </div> 
+           <!-- для того, чтобы сделать перенос строки необходимо поставить тэг <br> в конце строки -->
+      <div class="modal__wrap">
+        <div class="modal__photo"><img src="img/news/montreux-jazz-festival.jpg" alt="фото" class="modal__photo_img"></div>
+        <div class="modal__photo"><img src="img/news/montreux-jazz-festival.jpg" alt="фото" class="modal__photo_img"></div>
+        <div class="modal__photo"><img src="img/news/montreux-jazz-festival.jpg" alt="фото" class="modal__photo_img"></div>
+      </div>
+    </div>
+</div>
+<!-- Новостной блок №3 -->
+<div class="modal modal__hidden" id="modal_news-3">
+  <div class="modal__dialog">
+      <h2 class="modal__title">Новостной блок 3</h2>
+      <div class="modal__close">&#10006</div>
+      <div class="modal__text">Город Чистых Рук принял участие в пятом по счету джазовом фестивале.
+              Целью участие было продемонстрировать необходимость 
+             оснащения мероприятий средствами гигиены в зонах питания,
+             доступными для всех посетителей.
+              За два дня фестиваля фестиваль посетили 3000 человек. Из них услугой 
+             дезинфекции рук воспользовались более 2500 человек.  
+      </div> 
+             <!-- для того, чтобы сделать перенос строки необходимо поставить тэг <br> в конце строки -->
+    <div class="modal__wrap">
+      <div class="modal__photo"><img src="img/news/montreux-jazz-festival.jpg" alt="фото" class="modal__photo_img"></div>
+      <div class="modal__photo"><img src="img/news/montreux-jazz-festival.jpg" alt="фото" class="modal__photo_img"></div>
+      <div class="modal__photo"><img src="img/news/montreux-jazz-festival.jpg" alt="фото" class="modal__photo_img"></div>
+    </div>
+  </div>
 </div>
 
 </div>
@@ -530,10 +585,30 @@
   });
 
   $(document).ready( function () {
-    $('news_modal').on('click', function() {
-      console.log('Вы нажали кнопку');
-
+    $('#news_modal-1').on('click', function() {
+      $('#modal_news-1').removeClass('modal__visible');
+      $('#modal_news-1').addClass('modal__visible');
     }); 
+    $('.modal__close').on('click', function() {
+      $('#modal_news-1').addClass('modal__visible');
+      $('#modal_news-1').removeClass('modal__visible');
+    });
+    $('#news_modal-2').on('click', function() {
+      $('#modal_news-2').removeClass('modal__visible');
+      $('#modal_news-2').addClass('modal__visible');
+    }); 
+    $('.modal__close').on('click', function() {
+      $('#modal_news-2').addClass('modal__visible');
+      $('#modal_news-2').removeClass('modal__visible');
+    });
+    $('#news_modal-3').on('click', function() {
+      $('#modal_news-3').removeClass('modal__visible');
+      $('#modal_news-3').addClass('modal__visible');
+    }); 
+    $('.modal__close').on('click', function() {
+      $('#modal_news-3').addClass('modal__visible');
+      $('#modal_news-3').removeClass('modal__visible');
+    });
   });
 
 </script>
