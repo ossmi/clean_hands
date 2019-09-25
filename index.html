@@ -170,16 +170,7 @@
 <div class="offer-mob">
 <div class="offer-mob_title" id="click-1">
   ОПТИМИЗАЦИЯ  ГИГИЕНЫ  РУК</div><!-- /.offer__titele -->
-<div class="offer-mob_wrap">
-  <div class="offer-mob__news">
-    <p class="offer-mob__news_title">Новости</p>
-    <img src="img/mobile/news_left.png" alt="Иконка" class="offer-mob__news_img">
-  </div>
-  <a href="#form_special"><div class="offer-mob__news">
-    <p class="offer-mob__news_title">Спецпредложения</p>
-    <img src="img/mobile/news_right.png" alt="Иконка" class="offer-mob__news_img">
-  </div></a>
-</div>
+
 
 <div class="offer-mob__main">
   <p class="offer-mob__main_title">Мы предлагаем:</p>
@@ -229,6 +220,46 @@
       <span class="next bot-2 lala">контактными бактериальными,</span>
       <span class="next lala">инфекционными заболеваниями.</span></div>
   </div>
+
+  <div class="offer-mob_wrap">
+    <div class="offer-mob_item">
+      <div class="offer-mob__news">
+        <div class="offer-mob__news-wrap">
+          <p class="offer-mob__news_title">Новости</p>
+          <img src="img/mobile/news_left.png" alt="Иконка" class="offer-mob__news_img">
+        </div>
+        <div class="news__item" id="news_modal-mob-1">
+            <div class="news__item_text">7.09 - 8.09  Участие на фестивале 
+                «Большой Джем» </div>
+          </div>
+          <div class="news__item" id="news_modal-mob-2">
+            <div class="news__item_text">7.07 Участие на фестивале 
+                «Ночь музыки в Гатчине»  </div>
+          </div>
+          <div class="news__item" id="news_modal-mob-3">
+            <div class="news__item_text">5.05 Всемирный день гигиены рук</div>
+          </div>
+      </div>
+    </div>
+      
+      
+      <a href="#form_special" class="a_news">
+        <div class="offer-mob__news">
+            <div class="offer-mob__news-wrap">
+              <p class="offer-mob__news_title">Спецпредложения</p>
+              <img src="img/mobile/news_right.png" alt="Иконка" class="offer-mob__news_img">
+            </div>
+            <div class="news__item news__item_special news__item_special-mob" id="news_modal_special-1">
+                <div class="news__item_text">7.09 - 8.09  Скидка на оборудование 20% </div>
+              </div>
+              <div class="news__item news__item_special news__item_special-mob" id="news_modal_special-2">
+                <div class="news__item_text">7.07 Каждый третий заказ со скидкой 50%  </div>
+              </div>
+              <div class="news__item news__item_special news__item_special-mob" id="news_modal_special-3">
+                <div class="news__item_text">5.05 #город_чистых_рук выкладывайте фото и получите скидку</div>
+              </div>
+      </div></a>
+    </div>
 
 
 
@@ -602,6 +633,30 @@
       $('#modal_news-2').removeClass('modal__visible');
     });
     $('#news_modal-3').on('click', function() {
+      $('#modal_news-3').removeClass('modal__visible');
+      $('#modal_news-3').addClass('modal__visible');
+    }); 
+    $('.modal__close').on('click', function() {
+      $('#modal_news-3').addClass('modal__visible');
+      $('#modal_news-3').removeClass('modal__visible');
+    });
+    $('#news_modal-mob-1').on('click', function() {
+      $('#modal_news-1').removeClass('modal__visible');
+      $('#modal_news-1').addClass('modal__visible');
+    }); 
+    $('.modal__close').on('click', function() {
+      $('#modal_news-1').addClass('modal__visible');
+      $('#modal_news-1').removeClass('modal__visible');
+    });
+    $('#news_modal-mob-2').on('click', function() {
+      $('#modal_news-2').removeClass('modal__visible');
+      $('#modal_news-2').addClass('modal__visible');
+    }); 
+    $('.modal__close').on('click', function() {
+      $('#modal_news-2').addClass('modal__visible');
+      $('#modal_news-2').removeClass('modal__visible');
+    });
+    $('#news_modal-mob-3').on('click', function() {
       $('#modal_news-3').removeClass('modal__visible');
       $('#modal_news-3').addClass('modal__visible');
     }); 
