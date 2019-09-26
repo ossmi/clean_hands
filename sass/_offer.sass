@@ -24,8 +24,8 @@
         margin-top: 70px
     &__news
         border-radius: 5px
-        height: 254px
-        width: 210px
+        height: 291px
+        width: 211px
         background: url('../img/back_1.png') no-repeat
         margin-left: 15px
         margin-top: -30px
@@ -33,8 +33,8 @@
         &:hover
             box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1)
         &_special
-            margin-top: -50px
-            width: 210px
+            margin-top: -20px
+            width: 211px
             height: 342px
             color: #000000
             background: url('../img/back_2.png') no-repeat
@@ -111,20 +111,42 @@
             padding: 30px 0 30px 40px
             border-radius: 8px
 .news__item
-    
-    margin-top: 25px
+    margin-top: 27px
     margin-left: 5px
     margin-right: 5px
     font-size: 13px
-    background-color: #E6E6E6
-    color: #2C86C1
     &:hover
         cursor: pointer
+    &_text
+        margin-left: 30px
+        position: relative
+        &:before
+            left: -25px
+            position: absolute
+            content: url(../img/calendar.png)
+        &_content
+            &:after
+                position: absolute
+                content: ''
+                width: 140px
+                height: 1px
+                background-color:   #ff6600
+                bottom: -15px
+                left: 40%
+                transform: translateX(-50%)
+        &-1
+            margin-left: 30px
+            position: relative
+            &:before
+                left: -25px
+                position: absolute
+                content: url(../img/att.png)
     &_special
-       
-        margin-top: 45px
+        margin-top: 35px
 .a_news
     color: #000000
+.next_bot
+    margin-bottom: 5px
     
 
 

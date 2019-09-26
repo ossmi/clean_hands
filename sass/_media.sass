@@ -145,6 +145,11 @@
         display: none
     .offer-mob
         display: block
+    .offer-mob__news
+        height: 291px
+    .news__item_text_content
+        &:after
+            width: 165px
     .nav
         width: 768px
         &__tagline
@@ -289,7 +294,12 @@
                 font-size: 12px
                 background: url('../img/mobile/border_descr_576.png') no-repeat
     .news__item_text
-        font-size: 12px
+        font-size: 11px
+    .news__item_text-1
+        font-size: 11px
+    .news__item_text_content
+        &:after
+            width: 115px
     .application
         height: 700px
         background: #fafafa 
@@ -380,7 +390,7 @@
         &__news
             margin-bottom: 10px
             width: 121px
-            height: 171px
+            height: 201px
             font-size: 10px
             margin-top: 20px
             background: url('../img/mobile/border_news_320.png') no-repeat
@@ -388,6 +398,7 @@
                 height: 6px
                 width: 6px
             &_title
+                margin-bottom: 0
                 margin-top: 3px
                 margin-left: 3px
         &__main
@@ -432,7 +443,27 @@
                 padding: 5px 0px 5px 5px
                 font-size: 9px
     .news__item_text
-        font-size: 9px
+        font-size: 8px
+    .news__item_text-1
+        font-size: 8px
+    .news__item_text_content
+        &:after
+            width: 75px
+            bottom: -8px
+    .news__item_text
+        margin-left: 20px
+        position: relative
+        &:before
+            left: -20px
+            position: absolute
+            content: url(../img/mobile/calendar_320.png)
+        &-1
+            margin-left: 20px
+            position: relative
+            &:before
+                left: -20px
+                position: absolute
+                content: url(../img/mobile/att_320.png)
     .news__item
         margin-top: 15px
     .lala
